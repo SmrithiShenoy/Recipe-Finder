@@ -1,0 +1,294 @@
+/* Set a light background color for the entire website */
+body {
+  margin: 0;
+  background-color: rgb(253, 214, 188); /* Light background */
+  color: rgb(161, 69, 9); /* Default text color */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Ensure the main container fills the viewport */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Aligns content properly */
+}
+
+/* Style for the header */
+.App-header {
+  background-color: #a386e4; /* Light purple background */
+  color: #391180; /* Darker purple for text */
+  font-weight: bold;
+  display: flex;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 1.5em;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Center-align the HOME page content */
+.Home {
+  flex-grow: 1; /* Makes this content fill the available space */
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  text-align: center;
+  padding: 20px; /* Add padding for spacing */
+}
+
+/* Styling for the background rectangle on the HOME page */
+.home-background {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  padding: 40px; /* Add padding for spacing inside the rectangle */
+  border-radius: 10px; /* Rounded corners for the rectangle */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  max-width: 600px; /* Optional: limit the width */
+  width: 90%; /* Ensure it adjusts for smaller screens */
+  color: rgb(61, 31, 11); /* Ensure text contrasts well with the background */
+}
+
+/* Style for text inside the home page */
+.Home h2 {
+  font-size: 2.2em;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+  padding: 20px 0;
+  color: rgb(161, 69, 9);
+}
+
+.Home p {
+  font-size: 1.3em;
+  font-weight: 550;
+  line-height: 1.6;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  padding: 0 20px;
+  color: rgb(161, 69, 9);
+}
+
+/* Style for navigation links */
+.App-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.App-nav-link {
+  text-decoration: none;
+  color: #e7d6bd; /* Light cream color for links */
+  font-size: 1em;
+  padding: 10px 15px; /* Added padding for a larger clickable area */
+  border-radius: 8px; /* Rounded corners for hover and active effects */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for links */
+.App-nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1); /* Slightly enlarges on hover */
+}
+
+/* Active tab styling */
+.App-nav-link.active {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+}
+
+/* Center-align the SEARCH page content */
+.search-page {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding-top: 50px;
+  background-color: #301934; /* Matches background of the entire site */
+}
+
+/* Style for search container */
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Styling for input field */
+.search-input {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc }
+
+/* Styling for search button */
+.search-button {
+  padding: 10px 20px;
+  background-color: rgb(253, 214, 188); /* Light purple */
+  color: rgb(161, 69, 9);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.search-button:hover {
+  background-color: #8c5baf;
+}
+
+/* Styling for recipe list */
+.recipe-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recipe-item {
+  margin: 15px 0;
+}
+
+.link-container {
+  background-color: #ffffff; /* White rectangle for links */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.link-container:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.recipe-link {
+  text-decoration: none;
+  color: rgb(161, 69, 9); /* Dark purple text */
+  font-weight: bold;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: center; /* Vertically align with the center box */
+  margin-top: 20px; /* Add space above the image container */
+}
+
+.left-images, .right-images {
+  display: flex;
+  flex-direction: column; /* Stack images vertically */
+  gap: 10px; /* Add space between the images */
+  width: 20%; 
+  height: 60%; /* Adjust width for the side images */
+}
+
+.side-image {
+  width: 100%;
+  object-fit: cover; 
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.home-background {
+  background-color: rgba(255, 255, 255, 0.9); /* Center box styling */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  max-width: 600px; /* Control the width of the center box */
+  width: 60%; /* Occupies the middle space */
+  text-align: center;
+}
+
+/* Flexbox container to align the center box with side images */
+.Home {
+  display: flex;
+  justify-content: space-between; /* Align images and center box */
+  align-items: center; /* Vertically align items */
+  padding: 20px;
+  gap: 10px; /* Add space between the images and the center box */
+}
+
+.sign-in-container {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif; /* Center the sign-in box */
+  margin-bottom: 20px; /* Space below the sign-in box */
+}
+
+.sign-in-form {
+  display: flex;
+
+  flex-direction: column; /* Stack inputs vertically */
+  align-items: center; /* Center inputs */
+}
+
+.sign-in-form input {
+  margin: 10px 0; /* Space between inputs */
+  padding: 10px;
+  width: 200px; /* Width of the input fields */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sign-in-form button {
+  padding: 10px 20px;
+  background-color:  rgb(253, 214, 188); /* Button color */
+  color: #430371;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sign-in-form button:hover {
+  background-color: #8c5baf; /* Change color on hover */
+}
+
+.recipe-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.recipe-card-content {
+  padding: 15px;
+  flex-grow: 1;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-card h3 {
+  margin: 0 0 10px 0;
+  font-family: 'Times New Roman', Times, serif;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}

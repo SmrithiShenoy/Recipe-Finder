@@ -1,0 +1,155 @@
+.signin-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #301934;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.signin-form input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.signin-form button {
+    padding: 10px 20px;
+    background-color: rgb(253, 214, 188);
+    color: #430371;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signin-form button:hover {
+    background-color: #8c5baf;
+}
+
+.search-history {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-history h3 {
+    color: rgb(161, 69, 9);
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+}
+
+.search-history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.search-history li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    color: rgb(161, 69, 9);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.timestamp {
+    display: block;
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*.message {
+    text-align: center;
+    color: rgb(161, 69, 9);
+    font-family: 'Times New Roman', .signin-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #301934;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}*/
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-bottom: 20px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.signin-form input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.signin-form button {
+    padding: 10px 20px;
+    background-color: rgb(253, 214, 188);
+    color: #430371;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signin-form button:hover {
+    background-color: #8c5baf;
+}
+
+.search-history {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.search-history h3 {
+    color: rgb(161, 69, 9);
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+}
+
+.search-history ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

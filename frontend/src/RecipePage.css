@@ -1,0 +1,154 @@
+/* General styles for headings and text */
+h4 {
+    margin-left: 20px;
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h5 {
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.7em;
+}
+
+ul, p {
+    margin-left: 20px;
+    font-size: 1.2em;
+    font-weight: 550;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.recipe-wrapper {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align to the top with spacing */
+    min-height: 100vh; /* Ensure it takes the full height of the screen */
+    padding-top: 60px; /* Add vertical spacing */
+    background-color: #301934; /* Optional: Add a background color */
+}
+
+/* Center the rectangle and style it */
+.recipe-container {
+        background-color: rgb(255, 255, 255); /* White background */
+        padding: 40px; /* Add padding for spacing inside the rectangle */
+        border-radius: 10px; /* Rounded corners for the rectangle */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        max-width: 600px; /* Limit the width */
+        width: 100%; /* Ensure responsiveness */
+        color: rgb(129, 54, 4); /* Text color */
+        margin: 60px auto; /* Center horizontally and add vertical spacing */
+        position: relative; /* Keeps it within normal flow */
+        text-align: left; /* Align text inside the container to the left */
+    
+}
+
+/* Recipe title centered within the rectangle */
+.recipe-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fffcfc;
+    text-align: center; /* Center the title */
+}
+
+/* Recipe image (optional) */
+.recipe-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Recipe details aligned to the left */
+.recipe-details {
+    margin-top: 20px;
+    text-align: left; /* Align ingredients and instructions to the left */
+}
+
+/* Ingredients and instructions */
+.recipe-ingredients,
+.recipe-instructions {
+    font-size: 1.2em;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.recipe-ingredients li {
+    margin: 5px 0;
+}
+
+/* Loading message */
+.loading-message {
+    text-align: center;
+    font-size: 2em;
+    color: #fffdfd;
+}
+
+.recipe-detail {
+    background-color: purple;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.recipe-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-content img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.recipe-content h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.recipe-info {
+    background-color: #f6ebd3;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* RecipePage.css */
+.recipe-wrapper {
+    background-color: #301934; /* Purple background */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.recipe-container {
+    background-color: white; /* White box for text */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    max-width: 600px; /* Limit the width */
+    margin: auto; /* Center the container */
+}
+
+.recipe-content h4 {
+    font-family: 'Times New Roman', Times, serif; /* Heading font */
+}
+
+.recipe-info p,
+.ingredients ul,
+.instructions p {
+    font-family: 'Courier New', Courier, monospace; /* Paragraph font */
+}
+
+.recipe-wrapper img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
